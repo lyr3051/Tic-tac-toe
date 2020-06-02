@@ -5,7 +5,7 @@ import Square from './Square.js'
 
 function calculateWinner(squares){
     
-    const lines=[
+    const lines=[//獲勝的方式
         [0,1,2],
         [3,4,5],
         [6,7,8],
@@ -29,17 +29,9 @@ function calculateWinner(squares){
     return null;
 }
 
-function  Clear() {
-  this.setState({
-        squares:Array(9).fill(null)
-  })
-}
-
 
 
 class Boarder extends React.Component{
-    
-    
     
 
     constructor(props){
@@ -48,8 +40,8 @@ class Boarder extends React.Component{
             squares:Array(9).fill(null),
             turn: true,
             gamestart:true,
-            peace: false,
-            num:0
+            peace: false,//紀錄平局
+            num:0//紀錄有幾個square被點擊
             
         }
     }
@@ -60,11 +52,11 @@ class Boarder extends React.Component{
         
         if (calculateWinner(newarray) ) {
             
-            return;
+            return;//當有獲勝者，不回傳任何東西
           }
         else if(newarray[i]){
             
-           return;
+           return;//當平局(格子都被點過了)，不回傳任何東西
             
              
         }
@@ -123,9 +115,7 @@ class Boarder extends React.Component{
             
         }
           
-        
-               
-             
+
 
         return(
             

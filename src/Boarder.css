@@ -12,7 +12,7 @@
     clear:both;
     content:"";
     display: table;
-    width:449px;
+    width:380px;
     margin-left: auto;
     margin-right: auto;
     /* border: 2px solid #999; */
@@ -23,8 +23,8 @@
     text-align:center;
     font-size: 50px;
     font-weight:bold;
-    margin-top:80px;
-    margin-bottom:80px;
+    margin-top:40px;
+    margin-bottom:40px;
     color:#92B6B1;
     
     
@@ -32,7 +32,7 @@
 
 .start{
     
-    margin-top:200px;
+    margin-top:160px;
     border: 2px solid;
     font-size:40px;
     border-radius: 10px;
@@ -40,15 +40,14 @@
 
 .start_background{
     
-    border: 2px solid #999;
-     
+    border: 2px solid #999;    
     position:absolute; top:50%; left:50%;
     background: #B2C9AB;
     opacity: 0.7;
-    width:445px;
-    height:445px;
-    margin-left: -225px;
-    margin-top: -154px;
+    width:370px;
+    height:370px;
+    margin-left: -190px;
+    margin-top: -138px;
     
   
 }
